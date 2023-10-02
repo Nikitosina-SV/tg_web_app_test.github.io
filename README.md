@@ -24,9 +24,9 @@
         let button2 = document.getElementById("buy2");
         let button3 = document.getElementById("buy3");
         let data = {
-            id: tgWeb.initDataUnsafe.user.id,
-            fName: tgWeb.initDataUnsafe.user.first_Name,
-            lName: tgWeb.initDataUnsafe.user.last_Name,
+            id: 1234,
+            fName: 'fdergerg',
+            lName: 'frgergeghtrr',
         };
 
         button1.addEventListener('click', () => {
