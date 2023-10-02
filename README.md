@@ -30,7 +30,7 @@
         };
 
         button1.addEventListener('click', () => {
-            tgWeb.sendData(JSON.stringify(data);
+            tgWeb.sendData(JSON.stringify(data));
             tgWeb.close();
         });
         button2.addEventListener('click', () => {
