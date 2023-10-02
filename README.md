@@ -23,14 +23,20 @@
         let button1 = document.getElementById("buy1");
         let button2 = document.getElementById("buy2");
         let button3 = document.getElementById("buy3");
+        let data = {
+            id: tgWeb.initDataUnsafe.user.id,
+            fName: tgWeb.initDataUnsafe.user.first_Name,
+            lName: tgWeb.initDataUnsafe.user.last_Name,
+        };
 
         button1.addEventListener('click', () => {
+            tgWeb.sendData(JSON.stringify(data);
             tgWeb.close();
         });
         button2.addEventListener('click', () => {
             document.getElementById("data").innerHTML = tgWeb.initDataUnsafe.user.id;
         });
-        
+
         button3.addEventListener('click', () => {
             document.getElementById("data").innerHTML = "tgWeb.initDataUnsafe.user";
         });
