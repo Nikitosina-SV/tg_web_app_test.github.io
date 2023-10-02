@@ -38,7 +38,7 @@
         });
 
         button3.addEventListener('click', () => {
-            document.getElementById("data").innerHTML = "tgWeb.initDataUnsafe.user";
+            document.getElementById("data").innerHTML = "tgWeb.initDataUnsafe.test";
         });
     </script>
 </body>
