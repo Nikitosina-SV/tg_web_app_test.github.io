@@ -28,7 +28,7 @@
             tgWeb.close();
         });
         button2.addEventListener('click', () => {
-            document.getElementById("data").innerHTML = tgWeb.initDataUnsafe.user;
+            document.getElementById("data").innerHTML = tgWeb.initDataUnsafe.user.id;
         });
         
         button3.addEventListener('click', () => {
