@@ -12,15 +12,21 @@
         <h1>Telegram Web App</h1>
         <img src="https://fuzeservers.ru/wp-content/uploads/e/6/5/e6582e3f04d623bb4823f869c9a53c5d.png">
         <p>Testing data sending</p>
-        <button id="buy">Test button</button>
+        <p id="data"></p>
+        <button id="buy1">Test button1</button>
+        <button id="buy2">Test button2</button>
     </div>
     <script src="https://telegram.org/js/telegram-web-app.js"></script>
     <script>
         let tgWeb = window.Telegram.WebApp;
-        let button = document.getElementById("buy");
+        let button1 = document.getElementById("buy1");
+        let button2 = document.getElementById("buy2");
 
-        button.addEventListener('click', () => {
+        button1.addEventListener('click', () => {
             tgWeb.close();
+        });
+        button2.addEventListener('click', () => {
+            document.document.getElementById("data").text = tgWeb.initDataUnsafe.user
         });
     </script>
 </body>
